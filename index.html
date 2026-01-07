@@ -88,18 +88,16 @@
 }
 
 .auto-hotspot {
-  display: flex;
+  display: none;               /* 🔑 HARD disable */
   flex-direction: column;
   gap: 2px;
-
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
 }
 
 .auto-hotspot.visible {
-  opacity: 0.8;
+  display: flex;               /* 🔑 ONLY active hotspot exists */
+  opacity: 0.85;
 }
+
 
 .bubble {
   display: inline-flex;      /* key: shrink to content */
